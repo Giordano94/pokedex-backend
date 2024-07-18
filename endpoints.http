@@ -1,0 +1,19 @@
+GET http://localhost:3333/pokeapi/list
+###
+GET http://localhost:3333/pokeapi/characteristics/2
+###
+
+GET http://localhost:3333/pokeapi/searchByName/char
+###
+
+GET http://localhost:3333/pokeapi/searchById/1
+###
+
+GET http://localhost:3333/pokemon/favorite/list
+###
+
+PATCH http://localhost:3333/pokemon/favorite/4
+
+###
+
+PATCH http://localhost:3333/pokemon/favorite/remove/4
