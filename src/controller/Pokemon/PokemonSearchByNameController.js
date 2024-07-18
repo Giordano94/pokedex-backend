@@ -8,7 +8,6 @@ export class PokemonSearchByNameController {
 
     async handle(req, res) {
         try {
-            console.log('PokemonSearchByNameController');
             let pokemonName = req.params.name;
             if (!pokemonName) return res.status(400).json({ error: 'Pokemon name is required' });
             const searchPokemonByNameUseCase = new SearchPokemonByNameUseCase(this.pokeApiGateway);
